@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Hand Gesture Dataset</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- <nav>
+      <button class="btn">
+        <i class="fa fa-home">
+          <a href="#home">Home</a>
+        </i>
+      </button>
+      <button class="btn">
+        <a href="about.html">About</a>
+      </button>
+      <button class="btn">
+        <a href="#contact">Contact</a>
+      </button>
+    </nav> -->
+
+
+
+    <!-- Hidden Side bar -->
+    <!-- <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+      <a href="#">Image 1</a>
+      <a href="#">Image 2</a>
+      <a href="#">Image 3</a>
+      <a href="#">Image 4</a>
+    </div> -->
+    <!-- Side bar button -->
+    <!-- <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Demo</button>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script> -->
+
+    <div id="header">
+
+        <div class="row">
+            <div class="column">
+                <img id="hust" class="headerImage" src="image/hust.png" alt="" />
+            </div>
+            <div class="column">
+                <img id="X" class="headerImage" src="image/X.png" alt="" />
+            </div>
+            <div class="column">
+                <img id="naver" class="headerImage" src="image/naver.png" alt="" />
+            </div>
+        </div>
+        <div id="headerName">
+            <h1>Hand Gesture Datasets</h1>
+        </div>
+
+    </div>
+
+    <div id="content" class="tab-content">
+        <div class="row">
+            <img src="image/32gesture1.png" id="demoImage" />
+            <img src="image/32gesture2.png" id="demoImage" />
+        </div>
+        <hr>
+        <h1 id="intro">Introduction to this dataset</h1>
+        <div id="contentSubtle" class="Subtle-content">
+            <ul class="fontSubtle fontBigger">
+                <li>
+                    Our dataset is consists of 32 static hand-gesture classes. There are 20 subjects with 10 males and 10 females. The subjects are required to stand about 2 to 5 meters away from the front camera while performing the same gesture with both hands.
+                </li>
+                <br>
+                <li>
+                    To ensure the variability of the dataset, we collected data under various external factors such as clothing, background, indoor or outdoor taken position. Moreover, to avoid unnecessary noise, the background condition must be without individuals and or
+                    human body parts. The dataset is proposed for mobile-related development, that is why we choose to use normal phone cameras in terms of camera devices, set up with four sides of taking photos such as left, right, front and top; horizontal
+                    and vertical figure for each side to make data become spatial diverse.
+                </li>
+                <br>
+                <li>
+                    Our hand gesture dataset only focuses on meaningful gestures. Some gestures have specific cultural meanings in some countries such as lucky flower, Kung Fu salute. This dataset may be used in the context of human communication or online chatting.
+                </li>
+        </div>
+        <img id="graph" src="image/graph.PNG" alt="" width="600" />
+        <hr>
+        <h2><b>Download</b></h2>
+        <div id="contentSubtle" class="Subtle-content">
+            <ul class="fontSubtle fontBigger">
+                <li>
+                    Below is the general folder structure for each section. The last file will be specifically mentioned in each section.
+                </li>
+            </ul>
+        </div>
+        <!-- Folder Structure -->
+        <div id="contentSubtle" class="Subtle-content">
+            <div class="tree">
+                <ul>
+                    <li><i class="fa fa-folder-open"></i> Data
+                        <ul>
+                            <li><i class="fa fa-folder-open"></i> Gesture (01, 02, 03,...,32)
+                                <ul>
+                                    <li><i class="fa fa-folder-open"></i> Subject
+                                        <ul>
+                                            <li><i class="fa fa-folder-open"></i> Side (front, left, right, top)
+                                                <ul>
+                                                    <li><i class="fa fa-code"></i> File</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                    </li>
+                    </ul>
+            </div>
+            <ul class="fontSubtle fontBigger">
+                <div class="downloadBox">
+                    <a href="#X dataset">X dataset</a>
+                </div>
+                <div class="downloadBox">
+                    <a href="#Detect annotation (.xml)">Detect annotation (.xml)</a>
+                    <p>
+                        File was named the same name as the corresponding image, with PascalVOC format (.xml) Most images will have two or one bounding box for each, depend on the gesture. With no gesture, the image may have no bounding box.
+                    </p>
+                    <p>
+                        xml file contains some main tags as filename, size, object. Tag object contain name of class, (xmin, ymin, xmax, ymax) of bounding box.
+                    </p>
+                    <p>
+                        Data is labeled by the <a href="https://github.com/tzutalin/labelImg">LabelImg tool</a>
+                    </p>
+                </div>
+
+                <div class="downloadBox">
+                    <a href="#Segmentation annotation (.json)">Segment annotation (.json)</a>
+                    <p>
+                        We provided the masks stored in JSON format for segmentation process. The JSON format as a dictionary, with each of the key-value pair stores information of a single image.
+                        <br> The specific structure is as follow:
+                        <ul>
+                            <li>key: name of the image</li>
+                            <li>value: a dictionary with 2 key-value pairs:
+                                <ul>
+                                    <li type="circle">size: size of the image</li>
+                                    <li type="circle">contour: a list contains the coordinates of each pixel that lies on the contour of the segmentation mask.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </ul>
+
+        </div>
+
+        <hr>
+        <div class="flex">
+            <div class="paddingcolumnFeatures ">
+                <div class="columnFeatures">
+                    <h2><b>Data Statistics</b></h2>
+                    <!-- Slide show -->
+                    <div>
+                        <section>
+                            <img class="mySlides" src="image/hand1.PNG" alt="hand 1" />
+                            <img class="mySlides" src="image/hand2.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand3.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand4.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand5.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand6.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand7.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand8.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand9.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand10.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand11.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand12.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand13.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand14.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand15.png" alt="hand 2" />
+                            <img class="mySlides" src="image/hand16.png" alt="hand 2" />
+                        </section>
+                    </div>
+                    <br />
+                    <script type="text/javascript" src="myscript.js"></script>
+
+                    <ul class="fontSubtle fontBold noBullet">
+                        <li class="checkBullet"> &check; 32 static hand-gesture classes. </li>
+
+                        <li class="checkBullet"> &check; 33471 samples of RGB images</li>
+
+                        <li class="checkBullet"> &check; 1,069 images for each gesture</li>
+
+                        <li class="checkBullet"> &check; File extensions:.jpg, .jpeg, .png, .heic.</li>
+
+                        <li class="checkBullet"> &check; High resolution of 4128 × 3096.</li>
+
+                        <li class="checkBullet"> &check; 20 subjects: 10 males and 10 females</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="paddingcolumnDownload">
+                <div class="columnDownload">
+                    <h2><b>Copyright Notes</b></h2>
+                    <div>
+                        <p class="fontSubtle">The databases is released for research and educational purposes. We hold no liability for any undesirable consepuences of using the database. All right of the Hand Gesture Dataset are reserved. </p>
+                        <div class="columnDownloadCenter">
+                            <a href="https://google.com" class="downloadbtn2">Citation</a>
+                        </div>
+
+                        <p class="fontSubtle fontBigger">If you use our dataset, please kindly cite the following paper:</p>
+                        <ul class="fontSubtle">
+                            <li>
+                                citation paper 1
+                            </li>
+                            <li>
+                                citation paper 2
+                            </li>
+                            <li>
+                                citation paper 3
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paddingcolumnPeople">
+
+                <div class="columnPeople">
+                    <ul>
+                        <h2><b>Collaborators</b></h2>
+                        <img id="colab" src="image/hust.png" alt="" />
+                    </ul>
+                    <ul>
+                        <img id="colab" src="image/naver.png" alt="" />
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="footer">
+            <div>Copyright &copy; All Right Reserved XYZ
+                <div>
+                </div>
+</body>
+
+</html>

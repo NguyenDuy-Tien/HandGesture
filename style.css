@@ -1,0 +1,440 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #264653;
+  text-align: left;
+  font: bold;
+  font-size: 250%;
+}
+
+h2 {
+  color: #264653;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
+}
+
+div {
+  display: block;
+}
+
+html,
+body {
+  font-size: 14px;
+  background-color: #f0f0f0;
+  color: #1d2125;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.3;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+.tree ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #f0efeb;
+}
+.fontBigger {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.fontSubtle {
+  color: #1d3557;
+}
+
+.fontBoldish {
+  font-weight: 500;
+}
+
+.fontBold {
+  font-weight: 700;
+}
+#content a {
+  color: #23527c;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
+
+ul.noBullet {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.checkBullet {
+  width: min(300px,70vw);
+  height: 50px;
+  font-size: min(15px,8vw);
+}
+
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.mySlides {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50;
+  height: 50;
+  width: 25%;
+}
+
+.sidebar {
+  background-color: #111;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: darkgray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+#header {
+  height: 160px;
+  border-top: 10px solid #646464;
+  background: #000407;
+}
+
+#headerName h1 {
+  font-size: calc(1vw + 30px);
+  color: #f0efeb;
+  margin: 0px;
+  text-align: center;
+}
+
+.headerImage {
+  padding-top: 10px;
+  text-align: center;
+  height: min(35px,7vw);
+}
+
+#X{
+  padding-top: 15px;
+  text-align: center;
+  height: min(20px,5vw);
+}
+
+.row {
+  margin: 10px auto;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+
+.column {
+  width: fit-content;
+  padding: 5px;
+}
+
+#intro {
+  text-align: center;
+}
+
+#graph {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.columnFeatures {
+  display: table-cell;
+  width: min(350px,90vw);
+  /*padding-bottom: 20px;*/
+}
+
+.columnDownload {
+  display: table-cell;
+  width: min(350px,90vw);
+  line-height: 25px;
+}
+.columnDownloadCenter{
+  text-align: center;
+}
+
+.columnPeople {
+  display: table-cell;
+  width: min(350px,90vw);
+  text-align: center;
+
+}
+
+#content {
+  margin: auto;
+  width: 100%;
+}
+
+#contentSubtle{
+  margin: auto;
+  width: min(800px,90%);
+}
+
+.tree {
+  position: relative;
+  /* background:  white; */
+  width: 80%;
+  margin: 10px auto;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 250px;
+  color: #212529;
+  padding-bottom: 20px;
+}
+
+.tree span {
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.4px;
+  color: #a8a8a8;
+}
+
+.tree .fa-folder-open,
+.fa-folder {
+  color: #007bff;
+}
+
+.tree .fa-html5 {
+  color: #f21f10;
+}
+
+.tree ul {
+  font-size: 1.25rem;
+  padding-left: 5px;
+  list-style: none;
+}
+
+.tree ul li {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tree ul li::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 10px;
+  height: 1px;
+  margin: auto;
+  content: "";
+  background-color: #666;
+}
+
+.tree ul li::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background-color: #666;
+}
+
+.tree ul li:last-child:after {
+  height: 15px;
+}
+
+.tree a {
+  cursor: pointer;
+}
+
+.tree a:hover {
+  text-decoration: none;
+}
+
+#demoImage {
+  margin-top: 20px;
+  width: min(40vw,400px);
+}
+
+.downloadBox {
+  border-style: solid;
+  padding: 20px;
+  margin: 10px;
+  transition: 0.25s;
+  padding-top: 10px;
+}
+
+.downloadBox:hover {
+  transform: translateY(-0.1em);
+  box-shadow: 0 0.5em 0.5em -0.4em #1d3557;
+}
+
+.downloadBox ul {
+  margin-block-start: 0em;
+}
+
+#downloadimg {
+  width: 100%;
+  transition-duration: 0.4s;
+}
+
+a.downloadbtn2 {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  background: none;
+  color: #1a759f;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: all 0.25s;
+}
+
+.downloadbtn2:hover {
+  text-decoration: none;
+  border-color: #7f4f24;
+  color: black;
+  box-shadow: 0 0.5em 0.5em -0.4em #7f4f24;
+  transform: translateY(-0.1em);
+  cursor: pointer;
+}
+
+.btn {
+  padding-left: 30px;
+  background-color: white;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.downloadbtn:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+#footer {
+  padding: 20px;
+  background-color: #1d2125;
+}
+
+#footer div {
+  padding-left: 20px;
+  margin: auto;
+  width: 100%;
+  color: #e8e8e4;
+}
+
+#colab {
+  height: 40px;  
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+#footer a {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #444;
+}
+
+.flex{
+  width: 100%;
+  display: flex;
+  Flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paddingcolumnFeatures{
+}
+.paddingcolumnPeople{
+
+}
+.paddingcolumnDownload{
+  justify-content: center;
+}
+
+
