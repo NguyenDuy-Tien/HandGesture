@@ -134,7 +134,7 @@ header {
 
 #video-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     .video-description {
         width: 14%;
         background-color: #c2bfbf;
@@ -144,14 +144,26 @@ header {
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 66%;
-        video {
-            background-color: rgb(255, 255, 255);
-            width: 46%;
-            margin-bottom: .2rem;
-            min-width: 45%;
-            height: 46%;
-            object-fit: fill;
-            border: #9a9b9b 2px solid;
+        .video-wrapper {
+            width: 45%;
+            height: 41%;
+            video {
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                margin-bottom: .2rem;
+                min-width: 45%;
+                height: 100%;
+                object-fit: fill;
+                border: #9a9b9b 2px solid;
+            }
+            .video-side {
+                padding-top: .2rem;
+                width: 100%;
+                text-align: center;
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: #444444;
+            }
         }
     }
     .video-select-box {
@@ -220,6 +232,31 @@ header {
                 width: 70%;
                 border: #9a9b9b 2px solid;
             }
+        }
+    }
+}
+
+
+/* DOWNLOAD SECTION */
+
+.download-section {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    .tree {
+        margin-top: 1rem;
+        li {
+            position: relative;
+            margin-left: 2.5rem;
+            list-style: none;
+            line-height: 180%;
+            font-weight: 600;
+        }
+        .fa-level-up-alt {
+            transform: rotate(90deg);
+            margin-right: .8rem;
+        }
+        .fa-folder-open {
+            color: rgb(19, 114, 168);
         }
     }
 }
