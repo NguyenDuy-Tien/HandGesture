@@ -331,6 +331,38 @@ header #navbar li a:hover {
   color: #1372a8;
 }
 
+.download-box-container {
+  margin: 1.5rem auto;
+  width: 70%;
+}
+
+.download-box-container .download-box {
+  border: 2px solid;
+  margin-bottom: .5rem;
+  padding: .6rem;
+  padding-left: 1rem;
+}
+
+.download-box-container .download-box .download-title {
+  font-size: 120%;
+  color: #1372a8;
+  padding-top: .1rem;
+  padding-bottom: .2rem;
+}
+
+.download-box-container .download-box .download-description {
+  padding-top: .6rem;
+  font-size: 110%;
+}
+
+.download-box-container .download-box .download-description p {
+  padding-bottom: .6rem;
+}
+
+.download-box-container .download-box .download-description li {
+  margin-left: 2rem;
+}
+
 /* COLLABORATOR-SECTION */
 #collaborator-section-container {
   background-color: azure;
